@@ -1,0 +1,7 @@
+JS-RegEx-Test
+----------------
+- The purpose of this project is learning to use Regular Expressions in the application
+- The RegEx test is:
+  - Any 6 digits
+  - Hypen '-' is mandatory to be entered
+  - Capital letters 'M' or 'A'

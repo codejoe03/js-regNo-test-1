@@ -1,0 +1,91 @@
+* { border:none; padding:0; margin:0; list-style: none;}
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+
+/*Variables*/
+$blue: #143091;
+$black: #303030;
+$white: #fff;
+$pink: #f64c72;
+$primary-font:'Roboto', sans-serif;
+
+body {
+  font-family: $primary-font;
+}
+
+.bannerImage { position: relative;
+   .item {position: fixed; z-index: -1; width:100%;
+     img {width:100%; height: auto;} 
+     }
+}
+
+.sectionHeading { padding:50px 0; text-align:center; margin:70px 0 0; display: inline-block; width: 100%;
+   h1 {color:$white;}
+
+}
+
+.mainFeatArea { position: relative;}
+
+.workingArea { width: 480px; margin:0 auto; text-align:center; }
+
+.taskArea {
+  input[type="text"] {
+    padding:10px 15px; width:100%; margin-bottom:25px; display: inline-block;
+
+    &:active {border:none;}
+  }
+  button {border: none; color:$black; padding: 10px 25px; text-align: center; text-decoration: none; display: inline-block; transition-duration: 0.4s;
+  
+     &:hover {background-color: $pink; color:$white;}
+     &:focus {outline:none;}
+  
+  }
+}
+
+.taskNotes { margin:75px 0 0; color:$white;
+
+li {position:relative; padding-left: 21px; margin-bottom:10px;
+   &::before {content: "\f0c8"; font-family: FontAwesome; font-size: 10px; position: absolute; left: 0; top: 5px;
+  color:$pink; }
+  }
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  &:hover, &:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
